@@ -1,4 +1,5 @@
-function convertToSubcurrency(amount:number,factor:100){
+function convertToSubcurrency(amount:number){
+    const factor = 100;
     return Math.round(amount*factor)
 }
 
