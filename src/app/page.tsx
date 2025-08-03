@@ -11,7 +11,7 @@ if(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY === undefined){
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY)
 
 const page = () => {
-  const amount = 49.99
+  const amount = 39.99
   return (
     <div className='bg-green-300 mx-auto w-[700px] p-5 mt-5'>
       <div className='text-center'>

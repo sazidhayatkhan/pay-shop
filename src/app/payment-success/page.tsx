@@ -1,8 +1,13 @@
-export default function PaymentSuccess({
-  searchParams: { amount },
-}: {
-  searchParams: { amount: string };
-}) {
+// app/payment-success/page.tsx
+import { Metadata } from "next";
+
+type Props = {
+  searchParams: Record<string, string | string[] | undefined>;
+};
+
+export default function PaymentSuccess({ searchParams }: Props) {
+  const amount = searchParams.amount ?? "0.00";
+
   return (
     <main className="max-w-6xl mx-auto p-10 text-white text-center border m-10 rounded-md bg-gradient-to-tr from-blue-500 to-purple-500">
       <div className="mb-10">
